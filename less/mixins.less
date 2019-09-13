@@ -1,1 +1,21 @@
 // Mixins Here
+
+.btn(@width, @height, @color, @font-size){
+
+    background-color: dodgerblue;
+    width:@width;
+    height: @height;
+    color:@color;
+    font-size:@font-size;
+    padding: 20px;
+    &:hover{
+        background-color: darken(skyblue,20%)
+    }
+
+    @media @phone{
+        width: 100%;
+       flex-direction: column;
+       align-content: center;
+    
+    }
+}
