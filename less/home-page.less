@@ -83,7 +83,7 @@
     }
 
     .walk-img {
-      width: 46%;
+      width: 100%;
       margin-left: 4%;
       
       img {
@@ -124,20 +124,27 @@
       
       } 
       .walk{
-        display:flex;
-      .walk-text p{
+       display:flex;
+      .walk-text {
       width: 100%;
         }
       }
   }
-      @media @phone{
-        .walk-img img{
-          
-      justify-content: center;
-      align-items: center;
-      flex-direction: column-reverse;
       
+        .walk-img{
+          @media @phone{
+        width: 100%;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+         
+          
         }
+         img{  
+           width: 100%;
+       
+        
+          }
       }
 
 

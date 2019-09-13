@@ -286,7 +286,7 @@ footer {
   }
 }
 .home .walk .walk-img {
-  width: 46%;
+  width: 100%;
   margin-left: 4%;
 }
 .home .walk .walk-img img {
@@ -320,15 +320,19 @@ footer {
 .home .walk {
   display: flex;
 }
-.home .walk .walk-text p {
+.home .walk .walk-text {
   width: 100%;
 }
 @media (max-width: 500px) {
-  .walk-img img {
+  .walk-img {
+    width: 100%;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    flex-direction: column-reverse;
   }
+}
+.walk-img img {
+  width: 100%;
 }
 .btn {
   background-color: dodgerblue;
